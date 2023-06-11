@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--论坛 菜单栏项目-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/new_topic"
+        android:title="发起话题"
+        android:orderInCategory="80"
+        android:icon="@drawable/baseline_star_24"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/my_topic"
+        android:title="我的话题"
+        android:orderInCategory="90"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/record"
+        android:title="消息记录"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+</menu>

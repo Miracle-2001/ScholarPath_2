@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--MainActivity的xml-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="619dp"
+        android:background="@drawable/toolbar_border"
+        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/darkBlue"
+            style="@style/Customstyle.ToolBar"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/bottom_home_selector"
+        app:itemTextColor="@color/bottom_home_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <FrameLayout
+
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

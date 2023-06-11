@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--咨询 菜单栏项目-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/new_chat"
+        android:title="新建对话"
+        android:orderInCategory="90"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/chat_settings"
+        android:title="对话设置"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/history"
+        android:title="历史记录"
+        android:orderInCategory="80"
+        android:icon="@drawable/baseline_star_24"
+        app:showAsAction="never" />
+</menu>

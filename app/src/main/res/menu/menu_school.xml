@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页 菜单栏项目-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+<!--    <item android:id="@+id/action_edit"-->
+<!--        android:title="@string/bottom_title_school"-->
+<!--        android:orderInCategory="80"-->
+<!--        android:icon="@drawable/baseline_star_24"-->
+<!--        app:showAsAction="ifRoom" />-->
+
+    <item android:id="@+id/search"
+        android:title="@string/menu_search"
+        android:orderInCategory="90"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="ifRoom" />
+
+<!--    <item android:id="@+id/action_settings"-->
+<!--        android:title="@string/bottom_title_query"-->
+<!--        android:orderInCategory="100"-->
+<!--        app:showAsAction="ifRoom"/>-->
+</menu>

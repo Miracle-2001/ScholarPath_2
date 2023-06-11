@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+//        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "研途指南"
+include ':app'

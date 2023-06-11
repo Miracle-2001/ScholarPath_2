@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Customstyle.ToolBar" parent="Theme.ScholarPath">
+        <item name="titleTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.AppCompat.PopupMenu.Overflow</item>>
+        <!-- <item name="actionOverflowMenuStyle">-->
+    </style>
+
+    <style name="Widget.AppCompat.PopupMenu.Overflow" parem="Widget.AppCompat.PopupMenu.Overflow">
+
+    <item name="overlapAnchor">false</item>
+    <!-- 上面那一行代码的意思是指的是其位于toolbar下方-->
+    </style>
+</resources>

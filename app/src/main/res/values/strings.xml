@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">研途指南</string>
+    <string name="hello">hello</string>
+
+    <string name="bottom_title_school">首页</string>
+    <string name="bottom_title_talk">论坛</string>
+    <string name="bottom_title_query">咨询</string>
+    <string name="bottom_title_mine">我的</string>
+    <string name="menu_search">搜索</string>
+    <string name="option">选项</string>
+</resources>
