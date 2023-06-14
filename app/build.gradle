@@ -29,6 +29,13 @@ android {
 }
 
 dependencies {
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.alibaba:fastjson:1.2.80'
+    def dialogx_version = "0.0.45"
+    implementation "com.github.kongzue.DialogX:DialogX:${dialogx_version}"
+    implementation "com.github.kongzue.DialogX:DialogXIOSStyle:${dialogx_version}"
+    implementation "com.github.kongzue.DialogX:DialogXKongzueStyle:${dialogx_version}"
+    implementation "com.github.kongzue.DialogX:DialogXMIUIStyle:${dialogx_version}"
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'

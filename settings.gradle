@@ -1,17 +1,22 @@
 pluginManagement {
     repositories {
-//        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
         google()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
         mavenCentral()
-        gradlePluginPortal()
+        maven { url "https://www.jitpack.io" }
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-//        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
         google()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
         mavenCentral()
+        maven { url "https://www.jitpack.io" }
     }
 }
 rootProject.name = "研途指南"
