@@ -117,7 +117,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
                 new SchoolFragment(),
                 new TalkFragment(),
                 new QueryFragment(),
-                new MineFragment()
+                new MineFragment(),
         };
         getSupportFragmentManager().beginTransaction().add(R.id.main_frame,fragments[0])
                 .commit();

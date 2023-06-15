@@ -31,6 +31,7 @@ android {
 dependencies {
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'com.alibaba:fastjson:1.2.80'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     def dialogx_version = "0.0.45"
     implementation "com.github.kongzue.DialogX:DialogX:${dialogx_version}"
     implementation "com.github.kongzue.DialogX:DialogXIOSStyle:${dialogx_version}"

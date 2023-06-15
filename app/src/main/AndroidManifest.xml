@@ -22,16 +22,17 @@
         android:theme="@style/Theme.BJTUView"
         tools:targetApi="31">
         <activity
-            android:name=".ui.LoginPage" android:theme="@style/Theme.Splash"
+            android:name=".ui.LoginPage"
+            android:exported="true"
             android:label="@string/bottom_title_school"
-            android:exported="true">
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.MainActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
