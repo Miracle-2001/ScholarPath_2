@@ -1,5 +1,7 @@
 package com.example.bjtuview.ui.talk;
 
+import static com.google.android.material.internal.ContextUtils.getActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -14,7 +16,9 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bjtuview.R;
+import com.example.bjtuview.ui.show_talk_page;
 import com.example.bjtuview.ui.query.MessageAdapter;
+import com.example.bjtuview.ui.show_talk_page;
 
 import java.util.List;
 
@@ -39,6 +43,14 @@ public class talk_adapter extends RecyclerView.Adapter<talk_adapter.talkViewHold
         holder.username.setText(talklist.get(position).getUser());
         holder.title.setText(talklist.get(position).getTitle());
         holder.time.setText(talklist.get(position).getTime());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               Intent intent = new Intent(context, show_talk_page.class);
+               context.startActivity(intent);
+            }
+        });
     }
 
     @Override

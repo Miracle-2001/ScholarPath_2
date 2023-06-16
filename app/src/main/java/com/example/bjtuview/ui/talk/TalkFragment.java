@@ -1,6 +1,9 @@
 package com.example.bjtuview.ui.talk;
 
+import static com.google.android.material.internal.ContextUtils.getActivity;
+
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -92,8 +95,8 @@ public class TalkFragment extends BaseFragment {
         recyclerView = find(R.id.the_talk);
 
         talk_list= new ArrayList<>();
-        talk_list.add(new talk_profile("如何报名北京交通大学夏令营","如题","MinerTocat",3,"2023-1-2"));
-        talk_list.add(new talk_profile("如何报名北京大学夏令营","如题","MinerTocat",3,"2023-1-2"));
+        talk_list.add(new talk_profile("如何报考北京交通大学","如题","MinerTocat",3,"Fri Jun 16 11:46:17 EDT 2023"));
+        talk_list.add(new talk_profile("如何报名北京大学夏令营","如题","MinerTocat",3,"Fri Jun 16 00:46:17 EDT 2023"));
         talk_adapter adapter = new talk_adapter(getActivity(),talk_list);
 
         recyclerView.setAdapter(adapter);
