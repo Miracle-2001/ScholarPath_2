@@ -5,19 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <item android:id="@+id/new_chat"
-        android:title="新建对话"
+    <item android:id="@+id/query"
+        android:title="问题咨询"
         android:orderInCategory="90"
         android:icon="@drawable/baseline_search_24"
         app:showAsAction="never" />
 
-    <item android:id="@+id/chat_settings"
-        android:title="对话设置"
+    <item android:id="@+id/interview"
+        android:title="模拟面试"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/history"
-        android:title="历史记录"
+    <item android:id="@+id/cv"
+        android:title="简历评价"
         android:orderInCategory="80"
         android:icon="@drawable/baseline_star_24"
         app:showAsAction="never" />

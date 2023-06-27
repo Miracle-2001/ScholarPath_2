@@ -7,52 +7,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.MainActivity"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     >
+    
     <LinearLayout
-        android:id="@+id/llayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="619dp"
-        android:background="@drawable/toolbar_border"
-        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        style="@style/Customstyle.ToolBar"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/main_frame"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/darkBlue"
-            style="@style/Customstyle.ToolBar"
-            >
-
-        </androidx.appcompat.widget.Toolbar>
-
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_navigation"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:itemIconTint="@color/bottom_home_selector"
         app:itemTextColor="@color/bottom_home_selector"
         app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
-
-    <FrameLayout
-
-        android:id="@+id/main_frame"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llayout" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
